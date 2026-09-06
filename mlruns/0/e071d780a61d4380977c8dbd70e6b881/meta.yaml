@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/MLFlow/mlruns/0/e071d780a61d4380977c8dbd70e6b881/artifacts
+end_time: 1788724315481
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e071d780a61d4380977c8dbd70e6b881
+run_name: bemused-hog-137
+run_uuid: e071d780a61d4380977c8dbd70e6b881
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1788724312215
+status: 3
+tags: []
+user_id: kesha

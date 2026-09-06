@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/MLFlow/mlruns/0/4619b296d6e34fdd91824c8b2ba76041/artifacts
+end_time: 1788724274621
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4619b296d6e34fdd91824c8b2ba76041
+run_name: fortunate-bee-305
+run_uuid: 4619b296d6e34fdd91824c8b2ba76041
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1788724270402
+status: 3
+tags: []
+user_id: kesha
