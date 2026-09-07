@@ -1,4 +1,4 @@
-# Sourjya's Math Studio
+# Math Quest Studio
 
 A small Streamlit practice site for concept-first math instruction. The draft focuses on:
 

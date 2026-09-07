@@ -3,7 +3,7 @@ from datetime import date, timedelta
 import streamlit as st
 
 
-st.set_page_config(page_title="Sourjya's Math Studio", page_icon="+", layout="wide")
+st.set_page_config(page_title="Math Quest Studio", page_icon="+", layout="wide")
 
 WEEK_TAB_NAMES = [
     "Decode the Date",
@@ -341,7 +341,7 @@ def render_schedule():
     st.caption("This is a rough sequence. It can slow down, repeat, or skip ahead based on what Sourjya explains aloud.")
 
 
-st.sidebar.markdown("# Sourjya's Math Studio")
+st.sidebar.markdown("# Math Quest Studio")
 st.sidebar.caption("Meaning first. Numbers second.")
 if "next_page" in st.session_state:
     st.session_state.page = st.session_state.pop("next_page")
