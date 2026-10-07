@@ -163,7 +163,7 @@ def render_week_activity(week_index):
     variant = week_index + 1
     def question(prompt, options, answer, explanation, image_index):
         story_intros = [
-            "While helping prepare the class calendar, Sourjya notices several colorful notes, a weekend reminder, and one important date. The question is about the information that matters for the plan.",
+            "",
             "At the classroom supply table, Sourjya is organizing materials for an art activity. Some supplies are blue, some are red, and the teacher has already placed a few items in a tray. Think about what changes in the story.",
             "During clean-up after a busy activity, Sourjya is counting materials while classmates return some items and leave others on the table. Ignore the extra details and focus on what happens to the amount.",
             "A teacher is preparing a class display with books, counters, and cards. Sourjya hears several facts about the display, but only the action in the story tells which operation belongs.",
@@ -181,7 +181,12 @@ def render_week_activity(week_index):
             "A careful reader explains why the operation fits before calculating.",
             "Use a quick drawing if the words feel crowded.",
         ]
-        expanded_prompt = f"{story_intros[week_index]} {prompt} {story_tails[image_index % len(story_tails)]}"
+        intro = story_intros[week_index]
+        tail = story_tails[image_index % len(story_tails)]
+        if intro:
+            expanded_prompt = f"{intro} {prompt} {tail}"
+        else:
+            expanded_prompt = prompt  # No wrapper, no tail for calendar exercise
         return {"prompt": expanded_prompt, "options": options, "answer": answer, "explanation": explanation}
 
     if week_index in [0, 10]:
